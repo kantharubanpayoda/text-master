@@ -28,7 +28,6 @@
   "main": "lib/main.js",
   "dependencies": {
     "request": "~2.27.0",
-    "underscore": "~1.5.1"
   },
   "devDependencies": {},
   "license": "MIT",
