@@ -42,14 +42,10 @@ Endpoints
     
     gengo.job.feedback(jobId, callback);
 
-**gengo.job.revisions**
-
     gengo.job.revisions.list(jobId, callback);
     
     gengo.job.revisions.get({ id: jobId, revId: revisionId }, callback);
     
-**gengo.job.comments**
-
     gengo.job.comments.list(jobId, callback);
     
     gengo.job.comments.create({ id: jobId, body: 'Great job!' }, callback);
