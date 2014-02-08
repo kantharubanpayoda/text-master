@@ -27,7 +27,7 @@
   ],
   "main": "lib/main.js",
   "dependencies": {
-    "request": "~2.27.0",
+    "request": "~2.27.0"
   },
   "devDependencies": {},
   "license": "MIT",
