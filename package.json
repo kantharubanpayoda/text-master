@@ -5,7 +5,7 @@
   },
   "name": "gengo",
   "description": "Gengo API for node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/paton/node-onesky",
   "repository": {
     "type": "git",
