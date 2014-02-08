@@ -13,7 +13,7 @@ Install via [npm](http://npmjs.org/)
 
 Initialize Gengo with your public and private keys. If querying the Gengo sandbox, set `sandbox` to true.
 
-    var onesky = require('onesky')(publicKey, privateKey, sandbox);
+    var gengo = require('gengo')(publicKey, privateKey, sandbox);
 
 
 Endpoints
