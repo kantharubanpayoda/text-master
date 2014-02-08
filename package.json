@@ -1,0 +1,42 @@
+{
+  "author": {
+    "name": "Brandon Paton",
+    "email": "bp@brandonpaton.com"
+  },
+  "name": "gengo",
+  "description": "Gengo API for node",
+  "version": "0.1.0",
+  "homepage": "https://github.com/paton/node-onesky",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paton/node-gengo.git"
+  },
+  "contributors": [
+    {
+      "name": "Brandon Paton",
+      "email": "bp@brandonpaton.com"
+    }
+  ],
+  "keywords": [
+    "translate",
+    "gengo translation",
+    "translations",
+    "gengo",
+    "mygengo",
+    "i18n"
+  ],
+  "main": "lib/main.js",
+  "dependencies": {
+    "request": "~2.27.0",
+    "underscore": "~1.5.1"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "bugs": {
+    "url": "https://github.com/paton/node-gengo/issues"
+  },
+  "readme": " "
+}
