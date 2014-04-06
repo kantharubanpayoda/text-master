@@ -5,7 +5,7 @@
   },
   "name": "gengo",
   "description": "Gengo API for node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/paton/node-gengo",
   "repository": {
     "type": "git",
