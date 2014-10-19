@@ -70,15 +70,15 @@ Endpoints
 
     gengo.glossary.get(glossaryId, callback);
     
-**gengo.services**
+**gengo.service**
 
-    gengo.services.languagePairs({lc_src: 'en' }, callback);
+    gengo.service.languagePairs({lc_src: 'en' }, callback);
 
-    gengo.services.languages(callback);
+    gengo.service.languages(callback);
 
-    gengo.services.quote(jobs, callback);
+    gengo.service.quote(jobs, callback);
 
-    gengo.services.quoteFiles({ jobs: jobs, files: files }, callback);
+    gengo.service.quoteFiles({ jobs: jobs, files: files }, callback);
 
 
 
@@ -89,7 +89,7 @@ Forks and pull requests welcome!
 
 TODO
 ----------
-* gengo.services.quoteFiles isn't working currently
+* gengo.service.quoteFiles isn't working currently
 * Add tests
 
 
