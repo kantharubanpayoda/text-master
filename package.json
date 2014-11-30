@@ -5,7 +5,7 @@
   },
   "name": "gengo",
   "description": "Gengo API for node",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "homepage": "https://github.com/paton/node-gengo",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   ],
   "main": "lib/main.js",
   "dependencies": {
-    "request": "~2.40.0"
+    "request": "~2.49.0"
   },
   "devDependencies": {},
   "license": "MIT",
