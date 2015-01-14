@@ -1,7 +1,7 @@
 Gengo API for Node
 ===========
 
-This Node.js module provides access to the [Gengo API](http://developers.gengo.com/) for order translations.
+This Node.js module provides access to the [Gengo API](http://developers.gengo.com/) for ordering translations.
 
 Installation
 ----------
