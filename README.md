@@ -52,7 +52,7 @@ Endpoints
     
 **gengo.jobs**
 
-    gengo.jobs.create(jobsArray, callback);
+    gengo.jobs.create(jobsObject, callback);
 
     gengo.jobs.list({ status: 'approved' }, callback);
 
