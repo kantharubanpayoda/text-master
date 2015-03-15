@@ -5,11 +5,11 @@
   },
   "name": "gengo",
   "description": "Gengo API for node",
-  "version": "0.1.10",
-  "homepage": "https://github.com/paton/node-gengo",
+  "version": "0.1.11",
+  "homepage": "https://github.com/localizejs/node-gengo",
   "repository": {
     "type": "git",
-    "url": "git://github.com/paton/node-gengo.git"
+    "url": "git://github.com/localizejs/node-gengo.git"
   },
   "contributors": [
     {
@@ -35,7 +35,7 @@
     "node": ">=0.6"
   },
   "bugs": {
-    "url": "https://github.com/paton/node-gengo/issues"
+    "url": "https://github.com/localizejs/node-gengo/issues"
   },
   "readme": " "
 }
