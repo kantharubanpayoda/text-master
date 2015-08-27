@@ -74,7 +74,6 @@ Forks and pull requests welcome!
 
 TODO
 ----------
-* textmaster.service.quoteFiles isn't working currently
 * Add tests
 
 
