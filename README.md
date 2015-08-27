@@ -1,85 +1,71 @@
-Gengo API for Node
+Textmaster API for Node
 ===========
 
-This Node.js module provides access to the [Gengo API](http://developers.gengo.com/) for ordering translations.
+This Node.js module provides access to the [Textmaster API](https://www.app.textmaster.com/documentation#principles-api) for ordering translations.
 
 Installation
 ----------
 
 Install via [npm](http://npmjs.org/)
 
-    npm install gengo --save
+    npm install textmaster --save
 
 
-Initialize Gengo with your public and private keys. If querying the Gengo sandbox, set `sandbox` to true.
+Initialize Textmaster with your public and private keys. If querying the Textmaster sandbox, set `sandbox` to true.
 
-    var gengo = require('gengo')(publicKey, privateKey, sandbox);
+    var textmaster = require('textmaster')(publicKey, privateKey, sandbox);
 
 
 Endpoints
 ----------
-  
+
 - All callbacks are passed an error and response: `callback(err, res)`.
-- Supports camelCase and underscore naming conventions (Gengo uses the underscore convention).
-- Please refer to Gengo's [API Docs](http://developers.gengo.com/v2/api_methods/) for endpoint details.
+- Supports camelCase and underscore naming conventions (Textmaster uses the underscore convention).
+- Please refer to Textmaster's [API Docs](https://www.app.textmaster.com/documentation#principles-work-flow) for endpoint details.
 
-  
-**gengo.account**
 
-    gengo.account.stats(callback);
+**textmaster.account**
 
-    gengo.account.balance(callback);
+    textmaster.account.info(callback);
 
-    gengo.account.preferredTranslators(callback);
-    
-**gengo.job**
+**textmaster.project**
 
-    gengo.job.get(jobId, callback);
-    
-    gengo.job.update({ id: jobId, action: 'approve' }, callback);
-    
-    gengo.job.delete(jobId, callback);
-    
-    gengo.job.feedback(jobId, callback);
+    textmaster.project.create(projectObject, callback);
 
-    gengo.job.revisions.list(jobId, callback);
-    
-    gengo.job.revisions.get({ id: jobId, revId: revisionId }, callback);
-    
-    gengo.job.comments.list(jobId, callback);
-    
-    gengo.job.comments.create({ id: jobId, body: 'Great job!' }, callback);
-    
-**gengo.jobs**
+    textmaster.project.get.single({ projectId: projectId}, callback);
 
-    gengo.jobs.create(jobsObject, callback);
+    textmaster.project.get.list({}, callback);
 
-    gengo.jobs.list({ status: 'approved' }, callback);
+    textmaster.project.update(projectObject, callback); // must include projectId
 
-    gengo.jobs.get([jobId, jobId2, ...], callback);
-    
-**gengo.order**
+    textmaster.project.launch({ projectId: projectId}, callback);
 
-    gengo.order.get(orderId, callback);
+**textmaster.document**
 
-    gengo.order.delete(orderId, callback);
-    
-**gengo.glossary**
+    textmaster.document.complete.single({ documentId: documentId, projectId: projectId}, callback);
 
-    gengo.glossary.list(callback);
+    textmaster.document.complete.batch({ projectId: projectId, documents: [docId, docId2], satisfaction: 'positive', message: 'Well Done!'}, callback);
 
-    gengo.glossary.get(glossaryId, callback);
-    
-**gengo.service**
+    textmaster.document.create.single(documentObject, callback); // must include projectId
 
-    gengo.service.languagePairs({lc_src: 'en' }, callback);
+    textmaster.document.create.batch(documentObjects, callback); // must include projectId
 
-    gengo.service.languages(callback);
+    textmaster.document.delete({documentId: documentId, projectId: projectId }, callback);
 
-    gengo.service.quote(jobs, callback);
+    textmaster.document.get.single({documentId: documentId, projectId: projectId }, callback);
 
-    gengo.service.quoteFiles({ jobs: jobs, files: files }, callback);
+    textmaster.document.get.batch({projectId: projectId }, callback);
 
+    textmaster.document.get.filter({projectId: projectId}, callback);
+
+    textmaster.document.update({projectId: projectId, documentId: documentId}, callback); // must pass data
+
+
+**textmaster.service**
+
+    textmaster.service.languages(callback);
+
+    textmaster.service.quote(projectData, callback); // must pass data https://www.app.textmaster.com/documentation#projects-get-quotation-for-a-project
 
 
 Contribute
@@ -89,11 +75,11 @@ Forks and pull requests welcome!
 
 TODO
 ----------
-* gengo.service.quoteFiles isn't working currently
+* textmaster.service.quoteFiles isn't working currently
 * Add tests
 
 
 Author
 ----------
 
-Brandon Paton. Email me if you have any questions: [bp@brandonpaton.com](mailto:bp@brandonpaton.com). Supported by [Localize.js](https://localizejs.com/).
+Jonathan Wu. Email me if you have any questions: [jonathan.x.wu@gmail.com](mailto:jonathan.x.wu@gmail.com). Supported by [Localize](https://localizejs.com/).

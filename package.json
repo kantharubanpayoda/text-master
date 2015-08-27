@@ -1,28 +1,27 @@
 {
   "author": {
-    "name": "Brandon Paton",
-    "email": "bp@brandonpaton.com"
+    "name": "Johnny Wu",
+    "email": "jonathan.x.wu@gmail.com"
   },
-  "name": "gengo",
-  "description": "Gengo API for node",
-  "version": "0.1.11",
-  "homepage": "https://github.com/localizejs/node-gengo",
+  "name": "textmaster",
+  "description": "Textmaster API for node",
+  "version": "0.1.10",
+  "homepage": "https://github.com/Localize/node-textmaster",
   "repository": {
     "type": "git",
-    "url": "git://github.com/localizejs/node-gengo.git"
+    "url": "git://github.com/Localize/node-textmaster.git"
   },
   "contributors": [
     {
-      "name": "Brandon Paton",
-      "email": "bp@brandonpaton.com"
+      "name": "Johnny Wu",
+      "email": "jonathan.x.wu@gmail.com"
     }
   ],
   "keywords": [
     "translate",
-    "gengo translation",
+    "texmaster translation",
     "translations",
-    "gengo",
-    "mygengo",
+    "textmaste",
     "i18n"
   ],
   "main": "lib/main.js",
@@ -35,7 +34,7 @@
     "node": ">=0.6"
   },
   "bugs": {
-    "url": "https://github.com/localizejs/node-gengo/issues"
+    "url": "https://github.com/Localize/node-textmaster/issues"
   },
   "readme": " "
 }
