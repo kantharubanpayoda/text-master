@@ -26,7 +26,8 @@
   ],
   "main": "lib/main.js",
   "dependencies": {
-    "request": "~2.53.0"
+    "request": "~2.53.0",
+    "moment": "^2.10.6"
   },
   "devDependencies": {},
   "license": "MIT",
