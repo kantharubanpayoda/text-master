@@ -37,7 +37,7 @@ Endpoints
 
     textmaster.project.update({projectId: projectId}, projectObject, callback);
 
-    textmaster.project.launch({ projectId: projectId}, callback);
+    textmaster.project.asyncLaunch({ projectId: projectId}, callback);
 
 **textmaster.document**
 
