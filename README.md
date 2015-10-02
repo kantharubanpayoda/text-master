@@ -55,7 +55,7 @@ Endpoints
 
     textmaster.document.get.batch({projectId: projectId }, callback);
 
-    textmaster.document.get.filter({projectId: projectId}, { where: where, order: order},callback);
+    textmaster.document.get.filter({projectId: projectId}, filterObject,callback);
 
     textmaster.document.update({projectId: projectId, id: id}, documentObject, callback); // must pass data
 
