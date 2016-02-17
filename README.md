@@ -64,7 +64,11 @@ Endpoints
 
     textmaster.service.languages(callback);
 
+    textmaster.service.locales(callback);
+
     textmaster.service.quote(projectData, callback);
+
+    textmaster.service.pricing({locale: locale}, callback);
 
 
 Contribute
