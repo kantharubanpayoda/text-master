@@ -1,5 +1,4 @@
-# Node modules
-node_modules/
+node_modules
 
 .DS_Store
 
@@ -8,11 +7,3 @@ node_modules/
 *.swn
 
 npm-debug.log
-newrelic_agent.log
-
-.idea/
-
-*.map
-
-dump.rdb
-coverage
