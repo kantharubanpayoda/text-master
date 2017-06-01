@@ -84,4 +84,4 @@ TODO
 Author
 ----------
 
-Jonathan Wu. Email me if you have any questions: [jonathan.x.wu@gmail.com](mailto:jonathan.x.wu@gmail.com). Supported by [Localize](https://localizejs.com/).
+[Localize](https://localizejs.com). For support, email [support@localizejs.com](mailto:support@localizejs.com).
