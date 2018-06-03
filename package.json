@@ -5,7 +5,7 @@
   },
   "name": "textmaster",
   "description": "Textmaster API for node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/Localize/node-textmaster",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   ],
   "main": "lib/main.js",
   "dependencies": {
-    "request": "2.83.0"
+    "request": "2.87.0"
   },
   "devDependencies": {},
   "license": "MIT",
